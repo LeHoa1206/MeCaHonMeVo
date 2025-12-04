@@ -784,17 +784,41 @@ body::before {
 
 .video-wrapper {
   position: relative;
-  padding-bottom: 177.78%; /* 9:16 aspect ratio for phone videos */
+  width: 100%;
+  aspect-ratio: 9 / 16; /* Modern way for 9:16 ratio */
   background: #000;
+  overflow: hidden;
+}
+
+/* Fallback for browsers that don't support aspect-ratio */
+@supports not (aspect-ratio: 9 / 16) {
+  .video-wrapper {
+    padding-bottom: 177.78%; /* 9:16 aspect ratio */
+  }
+  
+  .video-wrapper .guppy-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }
 
 .guppy-video {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
+  background: #000;
+}
+
+/* Ensure video is visible on all devices */
+.video-section,
+.video-grid,
+.video-card,
+.video-wrapper,
+.guppy-video {
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 
 .video-overlay {
@@ -1343,16 +1367,37 @@ body::before {
   /* Video Section - Mobile */
   .video-section {
     padding: 4rem 0;
+    display: block !important; /* Ensure video section is visible */
+    visibility: visible !important;
+    background: rgba(255, 0, 0, 0.05); /* Debug: slight red tint to see section */
   }
   
   .video-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+    display: grid !important; /* Ensure grid is visible */
+    background: rgba(0, 255, 0, 0.05); /* Debug: slight green tint to see grid */
   }
   
   .video-card {
-    max-width: 400px;
+    max-width: 100%;
+    width: 100%;
     margin: 0 auto;
+    display: block !important; /* Ensure cards are visible */
+    min-height: 400px; /* Ensure card has height */
+  }
+  
+  .video-wrapper {
+    display: block !important;
+    position: relative;
+    width: 100%;
+    min-height: 300px; /* Ensure wrapper has height */
+  }
+  
+  .guppy-video {
+    display: block !important; /* Ensure video element is visible */
+    width: 100%;
+    min-height: 300px;
   }
   
   .video-card:hover {
@@ -1380,6 +1425,12 @@ body::before {
   
   .video-price {
     font-size: 0.9rem;
+  }
+  
+  /* Force video overlay to be visible on mobile */
+  .video-overlay {
+    transform: translateY(0) !important;
+    opacity: 0.95;
   }
   
   /* About Section - Mobile */
