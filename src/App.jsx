@@ -12,21 +12,47 @@ function App() {
     };
     
     const handleMouseMove = (e) => {
-      setMousePosition({
-        x: (e.clientX / window.innerWidth) * 100,
-        y: (e.clientY / window.innerHeight) * 100
-      });
+      // Only on desktop
+      if (window.innerWidth > 768) {
+        setMousePosition({
+          x: (e.clientX / window.innerWidth) * 100,
+          y: (e.clientY / window.innerHeight) * 100
+        });
+      }
+    };
+    
+    const handleTouchMove = (e) => {
+      // Handle touch on mobile
+      if (window.innerWidth <= 768 && e.touches.length > 0) {
+        const touch = e.touches[0];
+        setMousePosition({
+          x: (touch.clientX / window.innerWidth) * 100,
+          y: (touch.clientY / window.innerHeight) * 100
+        });
+      }
     };
 
     window.addEventListener('scroll', handleScroll);
     window.addEventListener('mousemove', handleMouseMove);
+    window.addEventListener('touchmove', handleTouchMove, { passive: true });
     
-    // Create bubbles
+    // Create bubbles (fewer on mobile)
     createBubbles();
+    
+    // Prevent zoom on double tap (iOS)
+    let lastTouchEnd = 0;
+    document.addEventListener('touchend', (e) => {
+      const now = Date.now();
+      if (now - lastTouchEnd <= 300) {
+        e.preventDefault();
+      }
+      lastTouchEnd = now;
+    }, false);
     
     return () => {
       window.removeEventListener('scroll', handleScroll);
       window.removeEventListener('mousemove', handleMouseMove);
+      window.removeEventListener('touchmove', handleTouchMove);
     };
   }, []);
 
@@ -34,7 +60,11 @@ function App() {
     const bubblesContainer = document.querySelector('.bubbles-container');
     if (!bubblesContainer) return;
     
-    for (let i = 0; i < 20; i++) {
+    // Fewer bubbles on mobile for better performance
+    const isMobile = window.innerWidth <= 768;
+    const bubbleCount = isMobile ? 10 : 20;
+    
+    for (let i = 0; i < bubbleCount; i++) {
       const bubble = document.createElement('div');
       bubble.className = 'bubble';
       bubble.style.left = Math.random() * 100 + '%';
