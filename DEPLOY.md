@@ -43,6 +43,19 @@ git push -u origin main
 
 ## Bước 5: Deploy Trên Render
 
+### Cách 1: Tự động với render.yaml (Đề xuất)
+
+1. Đăng nhập vào https://render.com
+2. Click "New +" → "Blueprint"
+3. Connect GitHub repository của bạn
+4. Chọn repository `guppy-shop`
+5. Render sẽ tự động đọc file `render.yaml` và cấu hình
+6. Click "Apply"
+7. Đợi 3-5 phút để Render build và deploy
+8. Website của bạn sẽ có địa chỉ: `https://guppy-shop.onrender.com`
+
+### Cách 2: Thủ công (Nếu cách 1 không được)
+
 1. Đăng nhập vào https://render.com
 2. Click "New +" → "Static Site"
 3. Connect GitHub repository của bạn
@@ -50,11 +63,20 @@ git push -u origin main
 5. Cấu hình:
    - **Name**: guppy-shop (hoặc tên bạn muốn)
    - **Branch**: main
+   - **Root Directory**: (để trống)
    - **Build Command**: `npm install && npm run build`
    - **Publish Directory**: `dist`
+   - **Auto-Deploy**: Yes
 6. Click "Create Static Site"
 7. Đợi 3-5 phút để Render build và deploy
 8. Website của bạn sẽ có địa chỉ: `https://guppy-shop.onrender.com`
+
+### ⚠️ LƯU Ý QUAN TRỌNG
+
+**Chọn "Static Site" KHÔNG PHẢI "Web Service"!**
+
+- ✅ Static Site: Cho website ReactJS (đúng)
+- ❌ Web Service: Cho backend API (sai)
 
 ## Bước 6: Cập Nhật Website
 

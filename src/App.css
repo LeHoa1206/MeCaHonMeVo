@@ -449,7 +449,7 @@ body::before {
   z-index: 2;
   text-align: center;
   padding: 2rem;
-  margin-top: 80px;
+  margin-top: 120px;
 }
 
 .hero-title {
@@ -1245,7 +1245,7 @@ body::before {
   
   .hero-content {
     padding: 1rem;
-    margin-top: 40px;
+    margin-top: 100px;
   }
   
   .hero-title {

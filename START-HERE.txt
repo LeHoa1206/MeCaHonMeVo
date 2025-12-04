@@ -37,7 +37,9 @@
    ✨ Nút Zalo & Facebook luôn hiển thị
    ✨ Video cá Guppy tự động phát
    ✨ Gallery ảnh đẹp mắt
-   ✨ Responsive trên mọi thiết bị
+   ✨ 100% Responsive - Đỉnh cao trên mobile
+   ✨ Touch-friendly - Tối ưu cho cảm ứng
+   ✨ Fast loading - Tải nhanh trên 3G/4G
 
 ═══════════════════════════════════════════════════════════════
 
