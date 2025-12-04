@@ -1,0 +1,15 @@
+Đặt 6 hình ảnh cá Guppy của bạn vào đây:
+- guppy1.jpg
+- guppy2.jpg
+- guppy3.jpg
+- guppy4.jpg
+- guppy5.jpg
+- guppy6.jpg
+
+Ảnh nên:
+- Tỷ lệ 2:3 (ví dụ: 800x1200 pixels)
+- Dung lượng dưới 500KB mỗi ảnh
+- Format: JPG hoặc PNG
+- Chất lượng cao, rõ nét
+
+Sau khi thêm ảnh, xóa file này đi.

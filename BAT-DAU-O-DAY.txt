@@ -1,0 +1,98 @@
+╔═══════════════════════════════════════════════════════════════╗
+║                                                               ║
+║   🐠 WEBSITE BÁN CÁ GUPPY 7 MÀU - MÊ CÁ HƠN MÊ VỢ 🐠       ║
+║                                                               ║
+║   Website đã được tạo thành công! Bắt đầu từ đây:           ║
+║                                                               ║
+╚═══════════════════════════════════════════════════════════════╝
+
+📋 CHECKLIST - LÀM THEO THỨ TỰ:
+
+✅ BƯỚC 1: THÊM VIDEO CÁ GUPPY
+   📁 Mở thư mục: guppy-shop/public/videos/
+   📹 Copy 3 video cá Guppy của bạn vào đây
+   ✏️ Đổi tên thành: guppy1.mp4, guppy2.mp4, guppy3.mp4
+   💡 Video nên quay dọc (như TikTok), dưới 10MB mỗi video
+
+✅ BƯỚC 2: THÊM HÌNH ẢNH CÁ GUPPY
+   📁 Mở thư mục: guppy-shop/public/images/
+   📸 Copy 6 ảnh cá Guppy của bạn vào đây
+   ✏️ Đổi tên thành: guppy1.jpg, guppy2.jpg, ..., guppy6.jpg
+   💡 Ảnh nên dưới 500KB mỗi ảnh
+
+✅ BƯỚC 3: CẬP NHẬT LINK LIÊN HỆ
+   📝 Mở file: guppy-shop/src/App.jsx
+   🔍 Tìm "YOUR_ZALO_NUMBER" và thay bằng số Zalo của bạn
+   🔍 Tìm "YOUR_FACEBOOK_PAGE" và thay bằng tên Facebook của bạn
+   💾 Lưu file (Ctrl + S)
+
+✅ BƯỚC 4: CHẠY WEBSITE
+   
+   🖥️ CÁCH 1: Chạy trên máy tính (Local)
+   
+   1. Mở CMD/Terminal trong thư mục guppy-shop
+   2. Chạy lệnh: npm run dev
+   3. Mở trình duyệt: http://localhost:5173
+   
+   🌐 CÁCH 2: Deploy lên Internet (Render)
+   
+   Xem hướng dẫn chi tiết trong file: DEPLOY.md
+
+═══════════════════════════════════════════════════════════════
+
+📚 CÁC FILE HƯỚNG DẪN:
+
+1. HUONG-DAN-NHANH.md  → Hướng dẫn nhanh bằng tiếng Việt
+2. DEPLOY.md           → Hướng dẫn deploy lên Render
+3. README.md           → Tài liệu đầy đủ (tiếng Anh)
+
+═══════════════════════════════════════════════════════════════
+
+🎨 TÍNH NĂNG WEBSITE:
+
+✨ Thiết kế đỉnh cao với gradient 7 màu cầu vồng
+✨ Hiệu ứng animations mượt mà, sinh động
+✨ Video cá Guppy tự động phát (định dạng điện thoại)
+✨ Gallery ảnh đẹp mắt với hover effects
+✨ Nút liên hệ Zalo & Facebook luôn hiển thị ở đầu trang
+✨ Responsive - hoạt động hoàn hảo trên mọi thiết bị
+✨ Tối ưu SEO với meta tags
+✨ Tốc độ load nhanh với Vite
+
+═══════════════════════════════════════════════════════════════
+
+🔧 LỖI THƯỜNG GẶP:
+
+❌ Lỗi: npm run dev không chạy
+   ✅ Giải pháp: Chạy "npm install" trước
+
+❌ Lỗi: Video/ảnh không hiển thị
+   ✅ Giải pháp: Kiểm tra tên file và đường dẫn
+
+❌ Lỗi: Link Zalo/Facebook không hoạt động
+   ✅ Giải pháp: Kiểm tra đã thay đổi link trong App.jsx chưa
+
+═══════════════════════════════════════════════════════════════
+
+💡 TIPS:
+
+• Nén video và ảnh trước khi upload để website load nhanh
+• Chụp/quay ở nơi có ánh sáng tốt để cá đẹp hơn
+• Test website trên điện thoại để đảm bảo responsive
+• Thường xuyên cập nhật ảnh/video mới để thu hút khách
+
+═══════════════════════════════════════════════════════════════
+
+🚀 SẴN SÀNG BẮT ĐẦU?
+
+1. Đọc file HUONG-DAN-NHANH.md
+2. Thêm video và ảnh của bạn
+3. Cập nhật link liên hệ
+4. Chạy: npm run dev
+5. Mở: http://localhost:5173
+
+═══════════════════════════════════════════════════════════════
+
+🐠 CHÚC BẠN BÁN ĐƯỢC NHIỀU CÁ GUPPY! 🐠
+
+Made with ❤️ by Kiro AI

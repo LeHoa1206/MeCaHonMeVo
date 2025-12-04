@@ -1,0 +1,12 @@
+Đặt 3 video cá Guppy của bạn vào đây:
+- guppy1.mp4
+- guppy2.mp4  
+- guppy3.mp4
+
+Video nên:
+- Định dạng dọc (9:16) như video điện thoại
+- Dung lượng dưới 10MB mỗi video
+- Format: MP4
+- Độ phân giải: 720x1280 hoặc 1080x1920
+
+Sau khi thêm video, xóa file này đi.

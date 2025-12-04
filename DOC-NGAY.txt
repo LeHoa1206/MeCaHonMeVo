@@ -1,0 +1,187 @@
+╔══════════════════════════════════════════════════════════════════╗
+║                                                                  ║
+║          🐠 WEBSITE BÁN CÁ GUPPY - ĐỌC FILE NÀY TRƯỚC 🐠       ║
+║                                                                  ║
+╚══════════════════════════════════════════════════════════════════╝
+
+Chào bạn! Website của bạn đã sẵn sàng! 🎉
+
+═══════════════════════════════════════════════════════════════════
+
+📚 CÁC FILE HƯỚNG DẪN (Đọc theo thứ tự):
+
+1. 📖 BAT-DAU-O-DAY.txt
+   → Hướng dẫn bắt đầu nhanh nhất
+   → Checklist đầy đủ
+   → ĐỌC FILE NÀY ĐẦU TIÊN!
+
+2. 🚀 HUONG-DAN-NHANH.md
+   → 3 bước đơn giản để chạy website
+   → Cách thêm video và ảnh
+   → Cách đổi link liên hệ
+   → Tips và tricks
+
+3. 🔗 VI-DU-LINK.md
+   → Ví dụ cụ thể về link Zalo
+   → Ví dụ cụ thể về link Facebook
+   → Cách lấy link của bạn
+   → Cách thay đổi trong code
+
+4. 🎬 TOI-UU-MEDIA.md
+   → Cách nén video xuống dưới 10MB
+   → Cách nén ảnh xuống dưới 500KB
+   → Công cụ miễn phí
+   → Tips chụp/quay đẹp
+
+5. 🌐 DEPLOY.md
+   → Hướng dẫn deploy lên Render
+   → Push code lên GitHub
+   → Cấu hình Render
+   → Cập nhật website
+
+6. 📊 SUMMARY.md
+   → Tổng quan về website
+   → Tính năng đầy đủ
+   → Công nghệ sử dụng
+   → Customization
+
+═══════════════════════════════════════════════════════════════════
+
+⚡ QUICK START (3 PHÚT):
+
+1. Thêm video vào: public/videos/
+   - guppy1.mp4
+   - guppy2.mp4
+   - guppy3.mp4
+
+2. Thêm ảnh vào: public/images/
+   - guppy1.jpg đến guppy6.jpg
+
+3. Đổi link trong: src/App.jsx
+   - Tìm: YOUR_ZALO_NUMBER
+   - Tìm: YOUR_FACEBOOK_PAGE
+   - Thay bằng link của bạn
+
+4. Chạy:
+   npm run dev
+
+5. Mở:
+   http://localhost:5173
+
+═══════════════════════════════════════════════════════════════════
+
+🎯 WEBSITE CÓ GÌ:
+
+✨ Tiêu đề "Mê Cá Hơn Mê Vợ" với hiệu ứng 7 màu cầu vồng
+✨ Nút Zalo & Facebook luôn hiển thị ở đầu trang
+✨ 3 video cá Guppy tự động phát (định dạng điện thoại)
+✨ 6 ảnh cá Guppy trong gallery đẹp mắt
+✨ Giới thiệu về cá Guppy 7 màu
+✨ Call-to-action buttons lớn
+✨ Responsive - đẹp trên mọi thiết bị
+✨ Animations mượt mà, chuyên nghiệp
+
+═══════════════════════════════════════════════════════════════════
+
+📁 CẤU TRÚC THƯ MỤC:
+
+guppy-shop/
+├── public/
+│   ├── videos/     ← Đặt video vào đây
+│   └── images/     ← Đặt ảnh vào đây
+├── src/
+│   ├── App.jsx     ← Đổi link liên hệ ở đây
+│   └── App.css     ← Đổi màu sắc ở đây
+└── [Các file hướng dẫn]
+
+═══════════════════════════════════════════════════════════════════
+
+🔧 YÊU CẦU HỆ THỐNG:
+
+✅ Node.js (đã cài sẵn)
+✅ npm (đã cài sẵn)
+✅ Trình duyệt web (Chrome, Firefox, Edge...)
+✅ Text editor (Notepad++, VS Code...)
+
+═══════════════════════════════════════════════════════════════════
+
+❓ CÂU HỎI THƯỜNG GẶP:
+
+Q: Video không hiển thị?
+A: Kiểm tra tên file: guppy1.mp4, guppy2.mp4, guppy3.mp4
+
+Q: Ảnh không hiển thị?
+A: Kiểm tra tên file: guppy1.jpg đến guppy6.jpg
+
+Q: Link Zalo/Facebook không hoạt động?
+A: Xem file VI-DU-LINK.md để biết cách đổi đúng
+
+Q: npm run dev không chạy?
+A: Chạy "npm install" trước
+
+Q: Làm sao deploy lên Internet?
+A: Xem file DEPLOY.md
+
+═══════════════════════════════════════════════════════════════════
+
+💡 TIPS QUAN TRỌNG:
+
+1. Nén video xuống dưới 10MB (xem TOI-UU-MEDIA.md)
+2. Nén ảnh xuống dưới 500KB (xem TOI-UU-MEDIA.md)
+3. Test link Zalo/Facebook trước khi deploy
+4. Backup file gốc trước khi chỉnh sửa
+5. Đọc kỹ các file hướng dẫn
+
+═══════════════════════════════════════════════════════════════════
+
+🎬 VIDEO HƯỚNG DẪN (Nếu cần):
+
+Nếu bạn cần video hướng dẫn chi tiết, có thể tìm trên YouTube:
+- "How to add images to React"
+- "How to deploy React to Render"
+- "How to compress video"
+
+═══════════════════════════════════════════════════════════════════
+
+📞 HỖ TRỢ:
+
+Nếu gặp vấn đề:
+1. Đọc lại file hướng dẫn
+2. Check console trong browser (F12)
+3. Google error message
+4. Hỏi trên Facebook groups về React
+
+═══════════════════════════════════════════════════════════════════
+
+🎯 CHECKLIST TRƯỚC KHI DEPLOY:
+
+□ Đã thêm 3 video vào public/videos/
+□ Đã thêm 6 ảnh vào public/images/
+□ Đã đổi link Zalo (4 chỗ trong App.jsx)
+□ Đã đổi link Facebook (4 chỗ trong App.jsx)
+□ Đã test website chạy OK (npm run dev)
+□ Video và ảnh đã được nén
+□ Đã đọc file DEPLOY.md
+
+═══════════════════════════════════════════════════════════════════
+
+🚀 BƯỚC TIẾP THEO:
+
+1. ✅ Đọc file BAT-DAU-O-DAY.txt
+2. ✅ Đọc file HUONG-DAN-NHANH.md
+3. ✅ Thêm video và ảnh
+4. ✅ Đổi link liên hệ
+5. ✅ Chạy npm run dev
+6. ✅ Test website
+7. ✅ Deploy lên Render
+
+═══════════════════════════════════════════════════════════════════
+
+🐠 CHÚC BẠN THÀNH CÔNG VỚI VIỆC BÁN CÁ GUPPY! 🐠
+
+Website này được tạo với ❤️ bởi Kiro AI
+Mọi thứ đã sẵn sàng, chỉ cần thêm nội dung của bạn!
+
+═══════════════════════════════════════════════════════════════════
+
+P/S: Nếu thấy website đẹp, đừng quên chia sẻ cho bạn bè! 😊
